@@ -17,6 +17,7 @@
 <body>
   {{content-for "body"}}
   <script>
+    //Google sign- in API. Functions supplied by API from Google.
     function onSuccess(googleUser) {
       console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
       sessionStorage.Username = googleUser.getBasicProfile().getName();
